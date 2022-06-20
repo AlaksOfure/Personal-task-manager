@@ -70,6 +70,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(list))
   }, [list])
+
   return (
     <section className="section-center">
       <form className='todo-form' onSubmit={handleSubmit}>
